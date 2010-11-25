@@ -1,0 +1,12 @@
+The Flex and Rails 3 applications work with Ruby 1.9.2 and Rails 3.0.3 based on fosrias/rails3-amf fork which merges
+legacy RubyAMF mapping with rails3-amf. Not all functionality is working including parameter mapping.
+
+1. For the rails app, modify db settings, create, migrate and seed the development database. That should be good to go.
+
+2. In the app\flex\Main.mxml file, modify _remoteObject.endpoint in "onComplete()" method as necessary and compile the flex app.
+
+3. Run the flex app. Click 'Update" to update the record.
+
+Note: At the time of this demo release, there is a bug in awesome-nested-set that has a monkey patch in this app. If you try to rebuild from scratch and install the plugins, you will have an error that you will have to patch.
+
+Also: There is a clear.sql script in the db folder of the rails app that you can use to quickly clear the database.

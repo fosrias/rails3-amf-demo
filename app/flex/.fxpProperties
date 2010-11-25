@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fxpProperties abbreviated="false" authoringTool="Flex Builder" compiles="true" parentProject="837ac580-a365-4b28-875b-9500bdc4876a" projectUUID="837ac580-a365-4b28-875b-9500bdc4876a" sdkVersion="4.1.0" uuid="32d714e4-6a17-4855-9ee3-303ebd8b0c54" version="4">
+  <projects>
+    <project filename="Core 4.0.fxpl" position="2" projectUUID="417910e1-c92d-43a6-b4bf-29fb96dbc608" uuid="32d714e4-6a17-4855-9ee3-303ebd8b0c54"/>
+  </projects>
+  <src/>
+  <swc>
+    <linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="32d714e4-6a17-4855-9ee3-303ebd8b0c54"/>
+    <linked location="D:/Projects/Flex/4.0/RubyamfTesting/libs" path="/libs" position="1" uuid="32d714e4-6a17-4855-9ee3-303ebd8b0c54"/>
+  </swc>
+  <misc/>
+  <theme/>
+</fxpProperties>

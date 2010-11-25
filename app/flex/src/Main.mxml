@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+    xmlns:s="library://ns.adobe.com/flex/spark" 
+    xmlns:mx="library://ns.adobe.com/flex/mx" 
+    xmlns:maps="com.fosrias.rubyamf.maps.*"
+    creationComplete="onComplete();">
+	
+    <s:layout>
+        <s:BasicLayout/>
+    </s:layout>
+	
+	<!-- Define Script _____________________________________________________ -->   
+<fx:Script>
+<![CDATA[
+	import vos.Action;
+	import vos.Category;
+	import vos.Comment;
+	import vos.Post;
+	import vos.PostAuthor;
+	
+	import mx.collections.ArrayCollection;
+	import mx.controls.Alert;
+	import mx.rpc.AsyncToken;
+	import mx.rpc.Responder;
+	import mx.rpc.events.FaultEvent;
+	import mx.rpc.events.ResultEvent;
+	import mx.rpc.remoting.Operation;
+	import mx.rpc.remoting.RemoteObject;
+	
+	//--------------------------------------------------------------------------
+	//
+	//  Variables
+	//
+	//--------------------------------------------------------------------------
+	
+	private var _remoteObject:RemoteObject;
+	
+	[Bindable]
+	private var _categories:ArrayCollection;
+	
+	[Bindable]
+	private var _comments:ArrayCollection;
+	
+	private var _post:Post;
+	
+	//--------------------------------------------------------------------------
+	//
+	//  Private methods
+	//
+	//--------------------------------------------------------------------------
+	
+	/**
+	 * Initializes the remote object and makes the initial call.
+	 */
+	private function onComplete():void
+	{
+		//return;
+		
+		_remoteObject = new RemoteObject();
+		
+		_remoteObject.destination="rubyamf";
+		_remoteObject.source="PostsController"; 
+		
+		//Change for actual url or different ports for your rails server
+		_remoteObject.endpoint="http://localhost:3000/rubyamf/gateway";
+		
+		buildPost();
+		
+		//Send an object so params[:post] (in Rails controller )
+		//contains the post object
+		call('create', {post: _post} );
+	}
+	
+	/**
+	 * Makes a remote call.
+	 */
+	private function call(remoteOperation:String, ...args):void
+	{
+		//Create the token
+		var token:AsyncToken;
+		var operation:Operation = Operation( 
+			_remoteObject.getOperation(remoteOperation) );
+		
+		//Call the remote operation
+		if (args.length > 0)
+		{
+			token = operation.send.apply( null, args );
+			
+		}  else {
+			
+			token = operation.send();
+		} 
+		
+		//Set the token responder. Package name used here to prevent 
+		//compile confict
+		token.addResponder( new mx.rpc.Responder(onResult, onFault) );  
+	}
+	
+	/**
+	 * Updates the remote post.
+	 */
+	private function updatePost():void
+	{
+		modifyPost();
+		call('update', {post: _post} );
+	}
+	
+	/**
+	 * Builds a new post record with children.
+	 */
+	private function buildPost():void
+	{
+		var category:Category;
+		var subcategory:Category;
+		var child:Category;
+		
+		_post = new Post("TestCreate");
+		
+		category = new Category('science');
+		category.addChild( new Category('physics') );
+		category.addChild( new Category('chemistry') );
+		category.addChild( new Category('biology') );
+		_post.categories.push(category);
+		category = new Category('literature');
+		subcategory = new Category('poetry');
+		child = new Category('haiku');
+		child.addChild( new Category('ancient') )
+		child.addChild( new Category('modern') ).addChild( new Category("pencil") );
+		subcategory.addChild( new Category('verse') );
+		subcategory.addChild(child);
+		category.addChild(subcategory);
+		category.addChild( new Category('fiction') );
+		_post.categories.push(category);
+		_post.author = new PostAuthor("Bob", "Initial");
+		_post.comments.push( new Comment( "Comment1", 
+			new Action("WRITE", "Writed", 0) ) );
+		_post.comments.push( new Comment( "Comment2", 
+			new Action("READ", "Read", 1)));
+	}
+	
+	/**
+	 * Updates the returned post.
+	 */
+	private function modifyPost():void
+	{
+		var category:Category;
+		var subcategory:Category;
+		var child:Category;
+		
+		_post.comments.push( new Comment( "Comment3", 
+			new Action("SEND", "Send", 2 ) ) );
+		var comment:Comment = Comment(_post.comments[0]);
+		comment.description = "Updated Comment";
+		comment.action = new Action( "SEND","30 Send", 2)
+		category = Category(_post.categories[0].children[0]);
+		
+		category.name = 'updated physics';
+		subcategory = new Category('gravity')
+		subcategory.addChild(new Category('moon'));
+		category.addChild(subcategory);
+		
+		category = Category(_post.categories[1])
+		subcategory = category.children[0];
+		
+		//Update and add new child
+		child = Category(subcategory.children[0]);
+		child.name = child.name + " updated";
+		child.addChild(new Category(child.name + " child"));
+		
+		//Move
+		child = Category(subcategory.children.pop());
+		category.children[1].addChild(child);
+		_post.author.description = "updated";
+	}
+	
+	/**
+	 * Handler for remote service call results.
+	 * 
+	 * @param event The result event.
+	 */
+	private function onResult(event:ResultEvent):void 
+	{
+		_post = Post(event.result);
+		
+		_categories = new ArrayCollection(_post.categories);
+		_comments = new ArrayCollection(_post.comments);
+	}
+	
+	/**
+	 * Handler for remote service call faults.
+	 * 
+	 * @param event The fault of the service call.
+	 */
+	private function onFault(event:FaultEvent):void 
+	{
+		Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail); 
+	}
+	
+]]>
+</fx:Script>
+	
+	<!-- Define GUI ________________________________________________________ -->   
+	<mx:AdvancedDataGrid x="10" y="10" id="adg1" 
+						 designViewDataType="tree" width="321" height="570">
+		<mx:dataProvider>
+			<mx:HierarchicalData source="{_categories}"/>
+		</mx:dataProvider>
+		<mx:columns>
+			<mx:AdvancedDataGridColumn headerText="Categories" 
+									   dataField="name"/>
+		</mx:columns>
+	</mx:AdvancedDataGrid>
+	<mx:AdvancedDataGrid x="339" y="10" id="adg0" 
+						 designViewDataType="tree" width="364" height="570">
+		<mx:dataProvider>
+			<mx:HierarchicalData source="{_comments}"/>
+		</mx:dataProvider>
+		<mx:columns>
+			<mx:AdvancedDataGridColumn headerText="Comments" 
+									   dataField="description"/>
+		</mx:columns>
+	</mx:AdvancedDataGrid>
+	<s:Button x="633" y="588" label="Update" click="updatePost();"/>
+</s:Application>

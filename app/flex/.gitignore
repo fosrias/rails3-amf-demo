@@ -1,0 +1,7 @@
+public/bin
+log/
+tmp/
+config/database.yml
+config/initializers/site_keys.rb
+vendor/rails
+Rails/.metadata/
