@@ -1,5 +1,4 @@
-The Flex and Rails 3 applications work with Ruby 1.9.2 and Rails 3.0.3 based on fosrias/rails3-amf fork which merges
-legacy RubyAMF mapping with rails3-amf. Not all functionality is working including parameter mapping.
+The Flex and Rails 3 applications work with Ruby 1.9.2 and Rails 3.0.3 based on fosrias/rails3-amf fork which merges legacy RubyAMF mapping with rails3-amf. Not all functionality is working including parameter mapping.
 
 1. For the rails app, modify db settings, create, migrate and seed the development database. That should be good to go.
 
