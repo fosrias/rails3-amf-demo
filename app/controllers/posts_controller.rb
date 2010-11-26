@@ -56,7 +56,7 @@ class PostsController < ApplicationController
     #flash[:notice] = "Post successfully created" if @post.save
     respond_to do |format|
       if @post.save
-      format.amf  { render :amf => @post, :scope =>'test' }
+      format.amf  { render :amf => @post, :class_mapping_scope =>'test'}
       format.html { redirect_to(@post) }
       format.xml  { render :xml => @post, :status => :created, :location => @post }
       end
