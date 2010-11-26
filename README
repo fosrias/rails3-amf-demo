@@ -6,7 +6,7 @@ The gemfile is setup according to Atomic's comments on the rubyamf google group 
 
 1. For the rails app, modify db settings, create, migrate and seed the development database. That should be good to go.
 
-2. In the app\flex\Main.mxml file, modify _remoteObject.endpoint in "onComplete()" method as necessary and compile the flex app.
+2. In the app\flex\Main.mxml file, modify _remoteObject.endpoint in "onComplete()" method as necessary and compile the flex app. You will likely have to update the output bin folder as well.
 
 3. Run the flex app. Click 'Update" to update the record.
 
