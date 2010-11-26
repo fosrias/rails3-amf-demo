@@ -1,6 +1,4 @@
 RubyAMFRails3::Application.routes.draw do
-  match 'rubyamf/gateway', :to => 'rubyamf#gateway'
-
   resources :comments
 
   resources :posts
