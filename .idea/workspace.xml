@@ -4,7 +4,6 @@
     <list default="true" id="88034f40-d382-43d8-bfc9-3007c364226c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
     </list>
     <ignored path="RubyAMF_Rails3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,15 +27,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="populator.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/populator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="81" selection-start="731" selection-end="731" vertical-scroll-proportion="-13.6">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rubyamf_config.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails_installer_files/rubyamf_config.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,10 +72,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rails3_configuration.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="rails3_configuration.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_configuration.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="81" selection-start="4430" selection-end="4430" vertical-scroll-proportion="0.5808937">
+            <state line="97" column="81" selection-start="4430" selection-end="4430" vertical-scroll-proportion="-15.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="161" selection-start="610" selection-end="610" vertical-scroll-proportion="0.16037735">
               <folding />
             </state>
           </provider>
@@ -162,12 +161,12 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/initializers/mime_types.rb" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_serialization.rb" />
         <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/populator.rb" />
         <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails_installer_files/rubyamf_config.rb" />
         <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_configuration.rb" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -938,13 +937,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/active_resource_populator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/array_collection_serializer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1045,7 +1037,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="81" selection-start="4430" selection-end="4430" vertical-scroll-proportion="0.5808937">
+        <state line="97" column="81" selection-start="4430" selection-end="4430" vertical-scroll-proportion="-15.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="161" selection-start="610" selection-end="610" vertical-scroll-proportion="0.16037735">
           <folding />
         </state>
       </provider>

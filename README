@@ -4,6 +4,8 @@ The only configuration items are found in config/rubyamf_config.rb and config/ap
 
 The gemfile is setup according to Atomic's comments on the rubyamf google group site.
 
+In order to get this to work, you also need to replace the empty folder vendor/bundle/rails3-amf with fosrias/rails3-amf so that you get its most current version.
+
 1. For the rails app, modify db settings, create, migrate and seed the development database. That should be good to go.
 
 2. In the app\flex\Main.mxml file, modify _remoteObject.endpoint in "onComplete()" method as necessary and compile the flex app. You will likely have to update the output bin folder as well.
