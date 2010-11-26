@@ -2,6 +2,8 @@ The Flex and Rails 3 applications work with Ruby 1.9.2 and Rails 3.0.3 based on 
 
 The only configuration items are found in config/rubyamf_config.rb and config/application.rb and new mapping functionality is in the models.
 
+The gemfile is setup according to Atomic's comments on the rubyamf google group site.
+
 1. For the rails app, modify db settings, create, migrate and seed the development database. That should be good to go.
 
 2. In the app\flex\Main.mxml file, modify _remoteObject.endpoint in "onComplete()" method as necessary and compile the flex app.
