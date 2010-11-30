@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>RubyAMF_Rails3_Flex</name>
+	<name>Rails3-amf-demo</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -19,7 +19,7 @@
 		<link>
 			<name>bin-debug</name>
 			<type>2</type>
-			<location>D:/Projects/Rails/RubyAMF_Rails3/public/bin</location>
+			<location>D:/Projects/Rails/Rails3-amf-demo/public/bin</location>
 		</link>
 	</linkedResources>
 </projectDescription>

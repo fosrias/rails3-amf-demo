@@ -68,7 +68,7 @@
 		
 		//Send an object so params[:post] (in Rails controller )
 		//contains the post object
-		call('create', {post: _post} );
+		call('create', {post: _post}, _post.categories[0] );
 	}
 	
 	/**
@@ -80,6 +80,8 @@
 		var token:AsyncToken;
 		var operation:Operation = Operation( 
 			_remoteObject.getOperation(remoteOperation) );
+		
+		_remoteObject.setRemoteCredentials("mark", "password");
 		
 		//Call the remote operation
 		if (args.length > 0)
