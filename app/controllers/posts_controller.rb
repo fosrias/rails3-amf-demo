@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  respond_to :xml, :html, :amf
+  #respond_to :xml, :html, :amf
 
   # GET /posts
   # GET /posts.xml
