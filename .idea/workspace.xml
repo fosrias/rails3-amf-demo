@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88034f40-d382-43d8-bfc9-3007c364226c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bin/Main.swf" afterPath="$PROJECT_DIR$/public/bin/Main.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/rubyamf_config.rb" afterPath="$PROJECT_DIR$/config/rubyamf_config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="RubyAMF_Rails3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +30,73 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rubyamf_config.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails_installer_files/rubyamf_config.rb">
+      <file leaf-file-name="request_processor.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_processor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="9" selection-start="7442" selection-end="7442" vertical-scroll-proportion="-76.84">
+            <state line="89" column="0" selection-start="2937" selection-end="2937" vertical-scroll-proportion="-9.12">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configuration.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/configuration.rb">
+      <file leaf-file-name="original_request_processor.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/original_request_processor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="340" selection-end="340" vertical-scroll-proportion="0.78">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.84">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="0" selection-start="935" selection-end="935" vertical-scroll-proportion="-7.76">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/action_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="91" selection-start="634" selection-end="634" vertical-scroll-proportion="-11.56">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGELOG" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/CHANGELOG">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="83" selection-start="0" selection-end="4529" vertical-scroll-proportion="0.38765007">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="REFACTORLOG" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/REFACTORLOG">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="26" selection-start="418" selection-end="418" vertical-scroll-proportion="-6.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="instrumenter.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="original_request_parser.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/original_request_parser.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="57" selection-start="773" selection-end="773" vertical-scroll-proportion="-12.24">
               <folding />
             </state>
           </provider>
@@ -48,70 +105,16 @@
       <file leaf-file-name="request_parser.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_parser.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="25" column="31" selection-start="904" selection-end="904" vertical-scroll-proportion="-7.52">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remoting.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bundle/rocket-amf/lib/rocketamf/remoting.rb">
+      <file leaf-file-name="railtie.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/railtie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="30" selection-start="2673" selection-end="2686" vertical-scroll-proportion="7.48">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="request_processor.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_processor.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="28.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rails3_configuration.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_configuration.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="81" selection-start="4430" selection-end="4430" vertical-scroll-proportion="-15.08">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="161" selection-start="610" selection-end="610" vertical-scroll-proportion="0.16037735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.3/lib/active_record/base.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="310" column="8" selection-start="15654" selection-end="15654" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/registration.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="13" column="31" selection-start="443" selection-end="443" vertical-scroll-proportion="-8.84">
               <folding />
             </state>
           </provider>
@@ -123,6 +126,10 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="GeneratorOptions">
+    <option name="VCS_SHOW_CONFIRMATION" value="true" />
+    <option name="MODEL_SKIP_FIXTURE" value="true" />
   </component>
   <component name="Git.Branch.Configurations">
     <option name="CURRENT" value="master" />
@@ -151,22 +158,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/vendor/plugins/rubyamf_plugin/app/configuration.rb" />
-        <option value="$PROJECT_DIR$/../Rails3-amf-to-RubyAMF/vendor/bundle/rails3-amf/lib/rubyamf/vo_helper.rb" />
-        <option value="$PROJECT_DIR$/../RubyAMF_Rails3amf/vendor/bundle/rails3-amf/lib/rubyamf/app/configuration.rb" />
-        <option value="$PROJECT_DIR$/../RubyAMF_Rails3amf/vendor/bundle/rails3-amf/lib/rubyamf/app/fault_object.rb" />
-        <option value="$PROJECT_DIR$/vendor/plugins/rubyamf_plugin/app/actions.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/mime_types.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_serialization.rb" />
-        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/populator.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/serialization/mapped_serialization.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/deserialization/populator.rb" />
         <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails_installer_files/rubyamf_config.rb" />
-        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_configuration.rb" />
-        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/serialization/serialization.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/extensions/rocketamf.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/serialization.rb" />
+        <option value="$PROJECT_DIR$/config/rubyamf_config.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/extensions/configuration.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_processor.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/railtie.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/original_request_parser.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_parser.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/action_controller.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/REFACTORLOG" />
+        <option value="$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/CHANGELOG" />
+        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
       </list>
     </option>
   </component>
@@ -252,92 +259,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rocket-amf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rocket-amf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rocket-amf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rocketamf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rocket-amf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ext" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,7 +404,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rails3" />
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails3-amf-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails3-amf-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails3-amf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rubyamf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,20 +469,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rails3-amf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails3-amf-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -586,10 +527,6 @@
               <option name="myItemId" value="Rails3-amf-demo" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RubyAMF_Rails3" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -600,16 +537,17 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\Rails\RubyAMF_Rails3amf\vendor\bundle\rails3-amf\lib\rubyamf\app" />
-      <recent name="D:\Projects\Rails\RubyAMF_Rails3amf\vendor\bundle\rails3-amf\lib\rubyamf\util" />
-      <recent name="D:\Projects\Rails\Rails3-amf-to-RubyAMF\config" />
-      <recent name="D:\Projects\Rails\Rails3-amf-to-RubyAMF\vendor\bundle\rails3-amf\lib\rubyamf" />
-      <recent name="D:\Projects\Rails\Rails3_AMF_Rails3\vendor\bundle\rails3-amf\lib\rails3-amf" />
+      <recent name="D:\Projects\Rails\Rails3-amf-demo\vendor\bundle\rails3-amf\lib\rails3-amf" />
+      <recent name="D:\Projects\Rails\Rails3-amf-demo\vendor\bundle\rails3-amf\lib\rubyamf\serialization" />
+      <recent name="D:\Projects\Rails\Rails3-amf-demo\vendor\bundle\rails3-amf\lib\rubyamf\lib\serialization" />
+      <recent name="D:\Projects\Rails\Rails3-amf-demo\vendor\bundle\rails3-amf\lib\rubyamf\lib\deserialization" />
+      <recent name="D:\Projects\Rails\Rails3-amf-demo\vendor\bundle\rails3-amf\lib\rubyamf\rails3\serialization" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: RubyAMF_Rails3">
@@ -882,9 +820,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24814814" sideWeight="0.6708134" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30239233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24867725" sideWeight="0.6076555" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3923445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26794258" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -933,118 +871,130 @@
           <url>file://$PROJECT_DIR$/vendor/plugins/rubyamf_plugin/app/actions.rb</url>
           <line>133</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/serialization/active_record_mapped_serialization.rb</url>
+          <line>11</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/serialization.rb</url>
+          <line>25</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/original_request_parser.rb</url>
+          <line>25</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/array_collection_serializer.rb">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rocket-amf/lib/rocketamf/remoting.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="71" selection-start="1403" selection-end="1403" vertical-scroll-proportion="-7.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/serialization.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="73" selection-start="678" selection-end="697" vertical-scroll-proportion="-9.52">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_serialization.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="32" selection-start="2299" selection-end="2299" vertical-scroll-proportion="7.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/fault_object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/populator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="81" selection-start="731" selection-end="731" vertical-scroll-proportion="-13.6">
+        <state line="101" column="0" selection-start="3867" selection-end="3867" vertical-scroll-proportion="-7.76">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails_installer_files/rubyamf_config.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="9" selection-start="7442" selection-end="7442" vertical-scroll-proportion="-76.84">
+        <state line="154" column="34" selection-start="9736" selection-end="9746" vertical-scroll-proportion="-14.96">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/configuration.rb">
+    <entry file="file://C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/hash_with_indifferent_access.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="340" selection-end="340" vertical-scroll-proportion="0.78">
+        <state line="61" column="0" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_processor.rb">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/app/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="28.44">
+        <state line="91" column="43" selection-start="5478" selection-end="5478" vertical-scroll-proportion="5.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/extensions/configuration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="125" selection-start="9809" selection-end="9809" vertical-scroll-proportion="-9.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/rubyamf_config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="6" selection-start="9186" selection-end="9186" vertical-scroll-proportion="-16.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/railtie.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="31" selection-start="443" selection-end="443" vertical-scroll-proportion="-8.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/original_request_processor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/original_request_parser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="57" selection-start="773" selection-end="773" vertical-scroll-proportion="-12.24">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_parser.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="25" column="31" selection-start="904" selection-end="904" vertical-scroll-proportion="-7.52">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rocket-amf/lib/rocketamf/remoting.rb">
+    <entry file="file://C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="30" selection-start="2673" selection-end="2686" vertical-scroll-proportion="7.48">
+        <state line="4" column="22" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/registration.rb">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/action_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="17" column="91" selection-start="634" selection-end="634" vertical-scroll-proportion="-11.56">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/REFACTORLOG">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0">
+        <state line="10" column="26" selection-start="418" selection-end="418" vertical-scroll-proportion="-6.8">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.3/lib/active_record/base.rb">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rails3-amf/request_processor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="310" column="8" selection-start="15654" selection-end="15654" vertical-scroll-proportion="0.0">
+        <state line="89" column="0" selection-start="2937" selection-end="2937" vertical-scroll-proportion="-9.12">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/rails3/rails3_configuration.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="81" selection-start="4430" selection-end="4430" vertical-scroll-proportion="-15.08">
+        <state line="47" column="0" selection-start="935" selection-end="935" vertical-scroll-proportion="-7.76">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/rails3-amf/lib/rubyamf/CHANGELOG">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="161" selection-start="610" selection-end="610" vertical-scroll-proportion="0.16037735">
+        <state line="15" column="83" selection-start="0" selection-end="4529" vertical-scroll-proportion="0.38765007">
           <folding />
         </state>
       </provider>
