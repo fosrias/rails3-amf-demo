@@ -1,4 +1,4 @@
-The Flex and Rails 3 applications work with Ruby 1.9.2 and Rails 3.0.3 based on fosrias/rails3-amf fork which merges legacy RubyAMF mapping with rails3-amf. Not all functionality is working including parameter mapping.
+The Flex and Rails 3 applications work with Ruby 1.9.2 and Rails 3.0.3 based on fosrias/rails3-amf fork which merges legacy RubyAMF mapping with rails3-amf. The only legacy mapping functionality not working are use_ruby_datetime and hash_key_access.
 
 The only configuration items are found in config/rubyamf_config.rb and config/application.rb and new mapping functionality is in the models.
 
