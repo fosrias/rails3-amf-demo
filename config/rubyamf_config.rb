@@ -152,6 +152,6 @@ module RubyAMF
     #
     # Here's an example:
     # ParameterMappings.register(:controller => :UserController, :action => :find_friend, :params => { :friend => "[0]['friend']" })
-    ParameterMappings.register(:controller => :PostsController, :action => :create, :params => { :mapped_post => "[0]['post']" })
+    # ParameterMappings.register(:controller => :PostsController, :action => :create, :params => { :mapped_post => "[0]['post']" })
   end
 end

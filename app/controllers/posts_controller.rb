@@ -44,7 +44,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.xml
   def create
-    @post = is_amf ? params[0][:post] : Post.new(params[:post])
+    @post = is_amf ? params[:post] : Post.new(params[:post])
 
 #    flash[:notice] = "Post successfully created" if @post.save
 #    respond_with(@post) do |format|
